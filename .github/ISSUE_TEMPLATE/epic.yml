@@ -1,0 +1,118 @@
+name: Epic
+description: Large planning unit that groups feature bundles and larger work packages
+title: "[Epic] "
+type: Epic
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for larger planning units.
+
+        This Epic should describe the goal, scope, success criteria, and the feature bundles that belong underneath it.
+
+        Planning fields such as Product Area, Priority, Release Phase, Status, Start Date and Target Date should be maintained in the GitHub Project board, not inside this template.
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should this Epic achieve?
+      placeholder: |
+        Example:
+        Users can complete the daily check-in flow, and trusted contacts are notified if a check-in is missed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: Background / Problem
+      description: Why is this Epic needed?
+      placeholder: |
+        Describe the user problem, business reason, or technical context.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this Epic?
+      placeholder: |
+        - Included item 1
+        - Included item 2
+        - Included item 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of Scope
+      description: What is explicitly not included in this Epic?
+      placeholder: |
+        - Not included item 1
+        - Not included item 2
+    validations:
+      required: false
+
+  - type: textarea
+    id: feature_bundles
+    attributes:
+      label: Planned Feature Bundles / Sub-Issues
+      description: List the larger feature bundles that should later be created as sub-issues under this Epic.
+      placeholder: |
+        - [ ] Feature Bundle: User onboarding
+        - [ ] Feature Bundle: Core workflow
+        - [ ] Feature Bundle: Admin / configuration
+        - [ ] Feature Bundle: Reporting / monitoring
+    validations:
+      required: false
+
+  - type: textarea
+    id: success_criteria
+    attributes:
+      label: Success Criteria
+      description: When is this Epic considered successfully completed?
+      placeholder: |
+        - [ ] Main user flow works end-to-end
+        - [ ] Required data is stored correctly
+        - [ ] Error handling is implemented
+        - [ ] Basic monitoring/logging is available
+        - [ ] Accepted by product/business owner
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Are there dependencies on other Epics, technical components, external services, or decisions?
+      placeholder: |
+        - Depends on ...
+        - Requires decision on ...
+        - Requires external setup for ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: open_questions
+    attributes:
+      label: Open Questions
+      description: What still needs to be clarified before or during implementation?
+      placeholder: |
+        - Question 1
+        - Question 2
+        - Question 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Anything else that is relevant for this Epic?
+      placeholder: |
+        Add links, sketches, references, screenshots, technical notes, or product decisions here.
+    validations:
+      required: false

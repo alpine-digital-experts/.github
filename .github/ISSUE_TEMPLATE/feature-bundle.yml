@@ -1,0 +1,172 @@
+name: Feature Bundle
+description: Medium-sized planning unit below an Epic that groups related features or tasks
+title: "[Feature Bundle] "
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for a Feature Bundle below an Epic.
+
+        A Feature Bundle should group related functionality that belongs together conceptually or technically.
+        It should later be attached as a sub-issue to an Epic.
+
+        Planning fields such as Product Area, Priority, Release Phase, Status, Start Date and Target Date should be maintained in the GitHub Project board, not inside this template.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is this Feature Bundle about?
+      placeholder: |
+        Example:
+        This bundle covers the user-facing daily check-in flow including reminder screen, check-in confirmation and missed check-in handling.
+    validations:
+      required: true
+
+  - type: textarea
+    id: parent_epic
+    attributes:
+      label: Parent Epic
+      description: Which Epic should this Feature Bundle belong to?
+      placeholder: |
+        Link the parent Epic here once available.
+        Example: #123
+    validations:
+      required: false
+
+  - type: textarea
+    id: user_value
+    attributes:
+      label: User / Business Value
+      description: Why is this bundle useful or important?
+      placeholder: |
+        Example:
+        This bundle enables the core user promise: a user can confirm that they are okay, and the system can react if the check-in is missed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this Feature Bundle?
+      placeholder: |
+        - Included feature or function 1
+        - Included feature or function 2
+        - Included feature or function 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of Scope
+      description: What is explicitly not included?
+      placeholder: |
+        - Not included item 1
+        - Not included item 2
+    validations:
+      required: false
+
+  - type: textarea
+    id: user_flow
+    attributes:
+      label: User Flow / Functional Flow
+      description: Describe the intended flow from a user or system perspective.
+      placeholder: |
+        1. User opens ...
+        2. System shows ...
+        3. User confirms ...
+        4. System stores ...
+        5. System triggers ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: implementation_notes
+    attributes:
+      label: Implementation Notes
+      description: Important technical notes, constraints or design decisions.
+      placeholder: |
+        - API endpoint needed:
+        - Database changes:
+        - Background job / batch logic:
+        - UI components:
+        - External service:
+    validations:
+      required: false
+
+  - type: textarea
+    id: planned_child_items
+    attributes:
+      label: Planned Child Features / Tasks
+      description: List the concrete features or implementation tasks that should later be created as sub-issues below this Feature Bundle.
+      placeholder: |
+        - [ ] Feature: ...
+        - [ ] Feature: ...
+        - [ ] Task: ...
+        - [ ] Task: ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: When is this Feature Bundle considered complete?
+      placeholder: |
+        - [ ] Main flow works end-to-end
+        - [ ] Relevant data is stored correctly
+        - [ ] Error cases are handled
+        - [ ] UI states are covered
+        - [ ] Basic logging/monitoring is available where needed
+        - [ ] Tested on relevant devices/environments
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Are there dependencies on other bundles, APIs, UI components, infrastructure, legal decisions or external services?
+      placeholder: |
+        - Depends on ...
+        - Requires decision on ...
+        - Requires setup of ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks / Edge Cases
+      description: What could make this bundle difficult or risky?
+      placeholder: |
+        - Risk 1
+        - Edge case 1
+        - Open technical uncertainty
+    validations:
+      required: false
+
+  - type: textarea
+    id: open_questions
+    attributes:
+      label: Open Questions
+      description: What still needs to be clarified before implementation?
+      placeholder: |
+        - Question 1
+        - Question 2
+        - Question 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Links, references, sketches, screenshots or other relevant information.
+      placeholder: |
+        Add links, sketches, references, screenshots, product decisions or technical notes here.
+    validations:
+      required: false

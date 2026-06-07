@@ -1,0 +1,123 @@
+name: Task
+description: Concrete implementation or setup task below a Feature Bundle or Epic
+title: "[Task] "
+type: Task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for concrete implementation, setup, configuration, refactoring or documentation tasks.
+
+        Tasks should normally be small enough to be completed independently.
+        If this task belongs to a Feature Bundle or Epic, link it below or attach it as a sub-issue.
+
+        Planning fields such as Product Area, Priority, Status, Release Phase, Start Date and Target Date should be maintained in the GitHub Project board.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What needs to be done?
+      placeholder: |
+        Example:
+        Implement the API endpoint that stores a successful daily check-in confirmation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: parent_item
+    attributes:
+      label: Parent Epic / Feature Bundle
+      description: Which Epic or Feature Bundle does this task belong to?
+      placeholder: |
+        Link the parent item here once available.
+        Example: #123
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / Background
+      description: Why is this task needed?
+      placeholder: |
+        Add relevant context, decisions, links, designs or related issues.
+    validations:
+      required: false
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: What exactly should be implemented or changed?
+      placeholder: |
+        - Requirement 1
+        - Requirement 2
+        - Requirement 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: Technical Notes
+      description: Important technical details, constraints or implementation hints.
+      placeholder: |
+        - API:
+        - Database:
+        - UI:
+        - Batch / background job:
+        - External service:
+        - Security / permissions:
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: When is this task considered done?
+      placeholder: |
+        - [ ] Implementation completed
+        - [ ] Relevant edge cases handled
+        - [ ] Errors are handled gracefully
+        - [ ] Tests added or updated where useful
+        - [ ] Documentation or comments updated where needed
+        - [ ] Reviewed or accepted
+    validations:
+      required: true
+
+  - type: textarea
+    id: test_notes
+    attributes:
+      label: Test Notes
+      description: How should this task be tested?
+      placeholder: |
+        - Manual test:
+        - Automated test:
+        - Test data:
+        - Devices / environments:
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Does this task depend on anything else?
+      placeholder: |
+        - Depends on issue #...
+        - Requires setup of ...
+        - Requires decision on ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any additional information, screenshots, links or references.
+      placeholder: |
+        Add links, screenshots, references, design notes or implementation details here.
+    validations:
+      required: false

@@ -60,21 +60,7 @@ body:
         5. System triggers ...
     validations:
       required: false
-
-  - type: textarea
-    id: implementation_notes
-    attributes:
-      label: Implementation Notes
-      description: Important technical notes, constraints or design decisions.
-      placeholder: |
-        - API endpoint needed:
-        - Database changes:
-        - Background job / batch logic:
-        - UI components:
-        - External service:
-    validations:
-      required: false
-
+  
     - type: textarea
     id: acceptance_criteria
     attributes:

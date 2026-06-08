@@ -25,28 +25,6 @@ body:
       required: true
 
   - type: textarea
-    id: parent_epic
-    attributes:
-      label: Parent Epic
-      description: Which Epic should this Feature Bundle belong to?
-      placeholder: |
-        Link the parent Epic here once available.
-        Example: #123
-    validations:
-      required: false
-
-  - type: textarea
-    id: user_value
-    attributes:
-      label: User / Business Value
-      description: Why is this bundle useful or important?
-      placeholder: |
-        Example:
-        This bundle enables the core user promise: a user can confirm that they are okay, and the system can react if the check-in is missed.
-    validations:
-      required: true
-
-  - type: textarea
     id: scope
     attributes:
       label: Scope
@@ -97,20 +75,7 @@ body:
     validations:
       required: false
 
-  - type: textarea
-    id: planned_child_items
-    attributes:
-      label: Planned Child Features / Tasks
-      description: List the concrete features or implementation tasks that should later be created as sub-issues below this Feature Bundle.
-      placeholder: |
-        - [ ] Feature: ...
-        - [ ] Feature: ...
-        - [ ] Task: ...
-        - [ ] Task: ...
-    validations:
-      required: false
-
-  - type: textarea
+    - type: textarea
     id: acceptance_criteria
     attributes:
       label: Acceptance Criteria
@@ -125,31 +90,7 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: dependencies
-    attributes:
-      label: Dependencies
-      description: Are there dependencies on other bundles, APIs, UI components, infrastructure, legal decisions or external services?
-      placeholder: |
-        - Depends on ...
-        - Requires decision on ...
-        - Requires setup of ...
-    validations:
-      required: false
-
-  - type: textarea
-    id: risks
-    attributes:
-      label: Risks / Edge Cases
-      description: What could make this bundle difficult or risky?
-      placeholder: |
-        - Risk 1
-        - Edge case 1
-        - Open technical uncertainty
-    validations:
-      required: false
-
-  - type: textarea
+    - type: textarea
     id: open_questions
     attributes:
       label: Open Questions
